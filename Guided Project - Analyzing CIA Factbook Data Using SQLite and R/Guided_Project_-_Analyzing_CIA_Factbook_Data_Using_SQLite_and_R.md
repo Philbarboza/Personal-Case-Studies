@@ -657,7 +657,7 @@ ggcorrplot(fact_cor, type = "lower", lab = TRUE)
 
 As it can be seen from the correlation graph above, we have medium to strong correlations between the area variables, which makes sense, further we have a strong correlation between the population\_growth and birth\_rate variables, which is logical, since a higher birth\_rate results normally in more people in the country and since this, a growing population. Besides of this we have a very weak negative correlation (-0.27) between death\_rate and migration\_rate. This is a correlation I expected to be positive and maybe even stronger. Since I thought that more people would leave a country and migrate to another if the death\_rate of its original country would be high.
 
-Conclusion and Disconnecting of database
+Conclusion and Disconnecting Database
 ========================================
 
 So, this projects aim was to increase familarity into the SQL package **RSQLite**, using its functions to accomplish basic summary statistics as well as to clean and fix the data set, here especially the NA values which we found at the beginning. Further, by using **ggplot2** as well as **ggcorrplot** our aim was to better understand the data, how it is distributed and how each variable is correlated to each other, to find out some interesting correlations.

@@ -1,3 +1,0 @@
-
-In this self solved project, which makes part of Dataquest.io Data Analyst R Track, I will analyze data from from the CIA World Factbook, a compendium of statistics about all of the countries on Earth. The Factbook contains demographic information.
-The purpose of this project, is to get more familiar with the R packages **RSQLite** and **DBI**, by incorporating SQL into R to clean the data, understand it's summary statistics and check possible correlations between the variables which may can bring some interesting information. Further, I'll create visualizations of the data using **ggplot2** and other Tidyverse packages.

@@ -3,19 +3,10 @@ title: "Answering Business Questions using SQLite and R"
 author: "Philipp Pfister"
 date: "22 Feb 2020"
 output:
-  html_document: 
-    highlight: monochrome
-    pdf_document: default
-    code_folding: hide
-    theme: cosmo
-    toc: yes
-    toc_depth: 4
-    toc_float: yes
-  word_document:
-    toc: yes
-  pdf_document:
-    toc: yes
-    toc_float: yes
+github_document:
+      toc: true
+      number_selections: true
+      toc_depth: 3
 ---
 
 In this self solved project, which makes part of **[dataquest.io Data Analyst R Track](https://www.dataquest.io/path/data-analyst-r/)**, I will analyze a database called **Chinook.db**. The Chinook database contains information about various elements in a fictional digital music shop, such as artists, songs, albums, as well as the shop's employees, customers, and the customers' purchases. All this information is contained in 11 tables, which are:
@@ -268,7 +259,7 @@ run_query(cust_stats_country)
 As it can be seen above, the USA is the country where most of our customers come from and where we have in total numbers the highest performance. Next, for better understanding of the above result, I'll plot them into several graphs. As the created country "Other" is made out of several countries which only had 1 sale, I will exclude this one from the visualizations.
 
 
-```{r}
+```{r, rmarkdown::render()}
 # save table create previously via SQL query into the R environment
 q3 <- run_query(cust_stats_country)
 
